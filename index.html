@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Gutter Cleaning Service by Turbovac Gutter Cleaning in Hunter Valley</title>
-    <meta name="description" content="Professional gutter cleaning services in Hunter Valley, Newcastle, Maitland. Ground-based vacuum cleaning, fully insured, before & after photos. Get a FREE quote today!">
+    <meta name="description" content="Professional gutter cleaning services in Hunter Valley, Newcastle, Maitland. Ground-based vacuum cleaning, fully insured, before & after photos. Get a FREE quote today.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,31 +16,31 @@
     
     <style>
         /* ============================================
-           CSS VARIABLES - Brand Colors
+           CSS VARIABLES - Brand Colors (UPDATED: Brighter/Warmer)
         ============================================ */
         :root {
-            --primary-dark: #4A4A4A;
-            --primary-darker: #333333;
-            --accent-green: #5CB85C;
-            --accent-green-dark: #3D8B3D;
-            --accent-green-light: #7ED17E;
+            --primary-dark: #3D3D3D;
+            --primary-darker: #2A2A2A;
+            --accent-green: #4CAF50;
+            --accent-green-dark: #388E3C;
+            --accent-green-light: #81C784;
             --white: #FFFFFF;
-            --off-white: #F8F9FA;
-            --light-gray: #E9ECEF;
+            --off-white: #F5F7F5;
+            --light-gray: #E8F5E9;
             --medium-gray: #6C757D;
             --text-dark: #2D2D2D;
             --text-light: #555555;
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
-            --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
-            --shadow-lg: 0 8px 30px rgba(0,0,0,0.15);
+            --warm-bg: #FAFCFA;
+            --hero-gradient-start: #2E7D32;
+            --hero-gradient-end: #1B5E20;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.10);
+            --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
             --transition: all 0.3s ease;
             --border-radius: 8px;
             --border-radius-lg: 16px;
         }
 
-        /* ============================================
-           RESET & BASE STYLES
-        ============================================ */
         *, *::before, *::after {
             margin: 0;
             padding: 0;
@@ -59,6 +59,7 @@
             color: var(--text-dark);
             background-color: var(--white);
             overflow-x: hidden;
+            padding-bottom: 70px;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -68,1633 +69,439 @@
             color: var(--primary-darker);
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 80px 0; }
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto 50px; }
+        .section-header h2 { font-size: 2.2rem; margin-bottom: 15px; }
+        .section-header p { color: var(--text-light); font-size: 1.1rem; }
+        .accent-line { width: 80px; height: 4px; background: linear-gradient(90deg, var(--accent-green), var(--accent-green-dark)); margin: 15px auto 20px; border-radius: 2px; }
 
-        ul {
-            list-style: none;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .section {
-            padding: 80px 0;
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 50px;
-        }
-
-        .section-header h2 {
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-            position: relative;
-        }
-
-        .section-header p {
-            color: var(--text-light);
-            font-size: 1.1rem;
-        }
-
-        .accent-line {
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-green), var(--accent-green-dark));
-            margin: 15px auto 20px;
-            border-radius: 2px;
-        }
-
-        /* ============================================
-           BUTTONS
-        ============================================ */
+        /* BUTTONS */
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 32px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 0.95rem;
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 14px 32px; font-family: 'Montserrat', sans-serif;
+            font-weight: 600; font-size: 0.95rem; border-radius: var(--border-radius);
+            cursor: pointer; transition: var(--transition); border: none;
+            text-transform: uppercase; letter-spacing: 0.5px;
         }
-
         .btn-primary {
             background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark));
-            color: var(--white);
-            box-shadow: 0 4px 15px rgba(92, 184, 92, 0.4);
+            color: var(--white); box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
         }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5); }
+        .btn-secondary { background: var(--white); color: var(--primary-dark); border: 2px solid var(--primary-dark); }
+        .btn-secondary:hover { background: var(--primary-dark); color: var(--white); }
+        .btn-outline-white { background: transparent; color: var(--white); border: 2px solid var(--white); }
+        .btn-outline-white:hover { background: var(--white); color: var(--primary-dark); }
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(92, 184, 92, 0.5);
-        }
-
-        .btn-secondary {
-            background: var(--white);
-            color: var(--primary-dark);
-            border: 2px solid var(--primary-dark);
-        }
-
-        .btn-secondary:hover {
-            background: var(--primary-dark);
-            color: var(--white);
-        }
-
-        .btn-outline-white {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-        }
-
-        .btn-outline-white:hover {
-            background: var(--white);
-            color: var(--primary-dark);
-        }
-
-        /* ============================================
-           HEADER & NAVIGATION
-        ============================================ */
+        /* HEADER */
         .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            box-shadow: var(--shadow-sm);
-            z-index: 1000;
-            transition: var(--transition);
+            position: fixed; top: 0; left: 0; right: 0;
+            background: var(--white); box-shadow: var(--shadow-sm);
+            z-index: 1000; transition: var(--transition);
         }
-
-        .header.scrolled {
-            box-shadow: var(--shadow-md);
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 50px;
-            width: auto;
-        }
-
-        .logo-text {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 1.5rem;
-            color: var(--primary-dark);
-        }
-
-        .logo-text span {
-            color: var(--accent-green);
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 35px;
-        }
-
+        .header.scrolled { box-shadow: var(--shadow-md); }
+        .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+        .logo { display: flex; align-items: center; }
+        .logo img { height: 65px; width: auto; }
+        .nav-links { display: flex; align-items: center; gap: 40px; }
         .nav-links a {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: var(--primary-dark);
-            position: relative;
-            padding: 5px 0;
+            font-family: 'Montserrat', sans-serif; font-weight: 600;
+            font-size: 0.95rem; color: var(--primary-dark);
+            position: relative; padding: 5px 0;
         }
-
         .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent-green);
+            content: ''; position: absolute; bottom: 0; left: 0;
+            width: 0; height: 2px; background: var(--accent-green);
             transition: var(--transition);
         }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .nav-cta {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta { display: flex; align-items: center; gap: 15px; }
         .nav-phone {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            color: var(--primary-dark);
-            font-size: 1rem;
+            display: flex; align-items: center; gap: 8px;
+            font-family: 'Montserrat', sans-serif; font-weight: 700;
+            color: var(--primary-dark); font-size: 1rem;
         }
+        .nav-phone i { color: var(--accent-green); font-size: 1.1rem; }
+        .mobile-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
+        .mobile-toggle span { width: 25px; height: 3px; background: var(--primary-dark); border-radius: 2px; transition: var(--transition); }
 
-        .nav-phone i {
-            color: var(--accent-green);
-            font-size: 1.1rem;
-        }
-
-        .mobile-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 5px;
-        }
-
-        .mobile-toggle span {
-            width: 25px;
-            height: 3px;
-            background: var(--primary-dark);
-            border-radius: 2px;
-            transition: var(--transition);
-        }
-
-        /* ============================================
-           HERO SECTION
-        ============================================ */
+        /* HERO */
         .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, var(--primary-darker) 0%, var(--primary-dark) 100%);
-            padding-top: 80px;
-            overflow: hidden;
+            position: relative; min-height: 100vh; display: flex; align-items: center;
+            background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%);
+            padding-top: 80px; overflow: hidden;
         }
-
         .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
             opacity: 0.5;
         }
-
-        .hero-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-content {
-            color: var(--white);
-        }
-
+        .hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
+        .hero-content { color: var(--white); }
         .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(92, 184, 92, 0.2);
-            border: 1px solid var(--accent-green);
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 25px;
-            animation: fadeInUp 0.6s ease;
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255,255,255,0.3);
+            padding: 8px 16px; border-radius: 50px; font-size: 0.85rem;
+            font-weight: 600; margin-bottom: 25px; animation: fadeInUp 0.6s ease;
         }
-
-        .hero-badge i {
-            color: var(--accent-green);
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            color: var(--white);
-            margin-bottom: 20px;
-            line-height: 1.2;
-            animation: fadeInUp 0.6s ease 0.1s backwards;
-        }
-
-        .hero h1 span {
-            color: var(--accent-green);
-        }
-
-        .hero-description {
-            font-size: 1.15rem;
-            opacity: 0.9;
-            margin-bottom: 35px;
-            max-width: 500px;
-            animation: fadeInUp 0.6s ease 0.2s backwards;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            animation: fadeInUp 0.6s ease 0.3s backwards;
-        }
-
-        .hero-features {
-            display: flex;
-            gap: 30px;
-            margin-top: 40px;
-            animation: fadeInUp 0.6s ease 0.4s backwards;
-        }
-
-        .hero-feature {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .hero-feature i {
-            color: var(--accent-green);
-            font-size: 1.2rem;
-        }
-
-        .hero-feature span {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .hero-image {
-            position: relative;
-            animation: fadeInRight 0.8s ease 0.3s backwards;
-        }
-
-        .hero-image img {
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-lg);
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-        }
-
+        .hero-badge i { color: var(--accent-green-light); }
+        .hero h1 { font-size: 3rem; color: var(--white); margin-bottom: 20px; line-height: 1.2; animation: fadeInUp 0.6s ease 0.1s backwards; }
+        .hero h1 span { color: var(--accent-green-light); }
+        .hero-description { font-size: 1.15rem; opacity: 0.95; margin-bottom: 35px; max-width: 500px; animation: fadeInUp 0.6s ease 0.2s backwards; }
+        .hero-buttons { display: flex; gap: 15px; flex-wrap: wrap; animation: fadeInUp 0.6s ease 0.3s backwards; }
+        .hero-features { display: flex; gap: 30px; margin-top: 40px; animation: fadeInUp 0.6s ease 0.4s backwards; }
+        .hero-feature { display: flex; align-items: center; gap: 10px; }
+        .hero-feature i { color: var(--accent-green-light); font-size: 1.2rem; }
+        .hero-feature span { font-size: 0.9rem; font-weight: 500; }
+        .hero-image { position: relative; animation: fadeInRight 0.8s ease 0.3s backwards; }
+        .hero-image img { border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); width: 100%; height: 500px; object-fit: cover; }
         .hero-image-badge {
-            position: absolute;
-            bottom: -20px;
-            left: -20px;
-            background: var(--white);
-            padding: 20px 25px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            align-items: center;
-            gap: 15px;
+            position: absolute; bottom: -20px; left: -20px;
+            background: var(--white); padding: 20px 25px;
+            border-radius: var(--border-radius); box-shadow: var(--shadow-lg);
+            display: flex; align-items: center; gap: 15px;
         }
+        .hero-image-badge i { font-size: 2.5rem; color: var(--accent-green); }
+        .hero-image-badge-text { font-family: 'Montserrat', sans-serif; }
+        .hero-image-badge-text strong { display: block; font-size: 1.3rem; color: var(--primary-dark); }
+        .hero-image-badge-text span { font-size: 0.85rem; color: var(--text-light); }
 
-        .hero-image-badge i {
-            font-size: 2.5rem;
-            color: var(--accent-green);
-        }
-
-        .hero-image-badge-text {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .hero-image-badge-text strong {
-            display: block;
-            font-size: 1.3rem;
-            color: var(--primary-dark);
-        }
-
-        .hero-image-badge-text span {
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-
-        /* ============================================
-           WHY CHOOSE US SECTION
-        ============================================ */
-        .why-choose {
-            background: var(--off-white);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-        }
-
+        /* WHY CHOOSE US */
+        .why-choose { background: var(--warm-bg); }
+        .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
         .feature-card {
-            background: var(--white);
-            padding: 35px 25px;
-            border-radius: var(--border-radius-lg);
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
+            background: var(--white); padding: 35px 25px;
+            border-radius: var(--border-radius-lg); text-align: center;
+            box-shadow: var(--shadow-sm); transition: var(--transition);
+            position: relative; overflow: hidden;
         }
-
         .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-green), var(--accent-green-dark));
-            transform: scaleX(0);
-            transition: var(--transition);
+            content: ''; position: absolute; top: 0; left: 0; right: 0;
+            height: 4px; background: linear-gradient(90deg, var(--accent-green), var(--accent-green-dark));
+            transform: scaleX(0); transition: var(--transition);
         }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
-
+        .feature-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .feature-card:hover::before { transform: scaleX(1); }
         .feature-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, rgba(92, 184, 92, 0.1), rgba(61, 139, 61, 0.1));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
+            width: 70px; height: 70px;
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(56, 142, 60, 0.1));
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; margin: 0 auto 20px;
         }
+        .feature-icon i { font-size: 1.8rem; color: var(--accent-green); }
+        .feature-card h3 { font-size: 1.1rem; margin-bottom: 12px; color: var(--primary-dark); }
+        .feature-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
 
-        .feature-icon i {
-            font-size: 1.8rem;
-            color: var(--accent-green);
-        }
-
-        .feature-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 12px;
-            color: var(--primary-dark);
-        }
-
-        .feature-card p {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-
-        /* ============================================
-           QUOTE FORM SECTION
-        ============================================ */
-        .quote-section {
-            background: linear-gradient(135deg, var(--primary-darker) 0%, var(--primary-dark) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .quote-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(92, 184, 92, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-
-        .quote-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .quote-content {
-            color: var(--white);
-        }
-
-        .quote-content h2 {
-            color: var(--white);
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-        }
-
-        .quote-content p {
-            opacity: 0.9;
-            font-size: 1.05rem;
-            margin-bottom: 30px;
-        }
-
-        .quote-benefits {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .quote-benefit {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .quote-benefit i {
-            color: var(--accent-green);
-            font-size: 1.2rem;
-        }
-
-        .quote-form-wrapper {
-            background: var(--white);
-            padding: 40px;
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .quote-form-wrapper h3 {
-            font-size: 1.5rem;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--primary-dark);
-            font-size: 0.9rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 14px 16px;
-            border: 2px solid var(--light-gray);
-            border-radius: var(--border-radius);
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1rem;
-            transition: var(--transition);
-            background: var(--off-white);
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent-green);
-            background: var(--white);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .quote-form-wrapper .btn {
-            width: 100%;
-            justify-content: center;
-            padding: 16px;
-            font-size: 1rem;
-        }
-
-        /* ============================================
-           PRICING SECTION
-        ============================================ */
-        .pricing-section {
-            background: var(--off-white);
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .pricing-card {
-            background: var(--white);
-            border-radius: var(--border-radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .pricing-card.featured {
-            transform: scale(1.05);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .pricing-card.featured .pricing-header {
-            background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark));
-        }
-
-        .pricing-card:hover {
-            box-shadow: var(--shadow-md);
-        }
-
-        .pricing-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: var(--accent-green);
-            color: var(--white);
-            padding: 5px 12px;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .pricing-header {
-            background: var(--primary-dark);
-            color: var(--white);
-            padding: 30px;
-            text-align: center;
-        }
-
-        .pricing-header h3 {
-            color: var(--white);
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-
-        .pricing-header .price {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 800;
-        }
-
-        .pricing-header .price span {
-            font-size: 1rem;
-            font-weight: 400;
-            opacity: 0.8;
-        }
-
-        .pricing-body {
-            padding: 30px;
-        }
-
-        .pricing-features {
-            margin-bottom: 25px;
-        }
-
-        .pricing-features li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--light-gray);
-            font-size: 0.95rem;
-        }
-
-        .pricing-features li:last-child {
-            border-bottom: none;
-        }
-
-        .pricing-features li i {
-            color: var(--accent-green);
-        }
-
-        .pricing-body .btn {
-            width: 100%;
-            justify-content: center;
-        }
-
-        /* ============================================
-           SERVICES SECTION
-        ============================================ */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-        }
-
+        /* SERVICES */
+        .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
         .service-card {
-            display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: 30px;
-            background: var(--white);
-            border-radius: var(--border-radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
+            display: grid; grid-template-columns: 220px 1fr; gap: 30px;
+            background: var(--white); border-radius: var(--border-radius-lg);
+            overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition);
         }
-
-        .service-card:hover {
-            box-shadow: var(--shadow-md);
-            transform: translateY(-3px);
-        }
-
-        .service-image {
-            height: 100%;
-            min-height: 200px;
-        }
-
-        .service-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .service-content {
-            padding: 30px 30px 30px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .service-content h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: var(--primary-dark);
-        }
-
-        .service-content p {
-            color: var(--text-light);
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-        }
-
-        .service-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
+        .service-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+        .service-image { height: 100%; min-height: 220px; overflow: hidden; }
+        .service-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transform: scale(1.1); }
+        .service-content { padding: 30px 30px 30px 0; display: flex; flex-direction: column; justify-content: center; }
+        .service-content h3 { font-size: 1.4rem; margin-bottom: 15px; color: var(--primary-dark); }
+        .service-content p { color: var(--text-light); margin-bottom: 20px; font-size: 0.95rem; }
+        .service-features { display: flex; flex-wrap: wrap; gap: 10px; }
         .service-feature-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(92, 184, 92, 0.1);
-            color: var(--accent-green-dark);
-            padding: 6px 12px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 600;
+            display: inline-flex; align-items: center; gap: 6px;
+            background: rgba(76, 175, 80, 0.1); color: var(--accent-green-dark);
+            padding: 6px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600;
         }
 
-        /* ============================================
-           PROCESS SECTION
-        ============================================ */
-        .process-section {
-            background: var(--off-white);
-        }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
+        /* PRICING */
+        .pricing-section { background: var(--warm-bg); }
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .pricing-card {
+            background: var(--white); border-radius: var(--border-radius-lg);
+            overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition);
             position: relative;
         }
+        .pricing-card.featured { transform: scale(1.05); box-shadow: var(--shadow-lg); }
+        .pricing-card.featured .pricing-header { background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark)); }
+        .pricing-card:hover { box-shadow: var(--shadow-md); }
+        .pricing-badge {
+            position: absolute; top: 15px; right: 15px;
+            background: var(--accent-green); color: var(--white);
+            padding: 5px 12px; border-radius: 50px;
+            font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+        }
+        .pricing-header { background: var(--primary-dark); color: var(--white); padding: 30px; text-align: center; }
+        .pricing-header h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 10px; }
+        .pricing-header .price { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 800; }
+        .pricing-header .price span { font-size: 1rem; font-weight: 400; opacity: 0.8; }
+        .pricing-body { padding: 30px; }
+        .pricing-features { margin-bottom: 25px; }
+        .pricing-features li { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--light-gray); font-size: 0.95rem; }
+        .pricing-features li:last-child { border-bottom: none; }
+        .pricing-features li i { color: var(--accent-green); }
+        .pricing-body .btn { width: 100%; justify-content: center; }
 
+        /* SERVICE AREAS */
+        .service-areas { background: linear-gradient(135deg, #7B1FA2 0%, #512DA8 100%); padding: 60px 0; }
+        .service-areas .section-header h2 { color: var(--white); }
+        .service-areas .section-header p { color: rgba(255,255,255,0.9); }
+        .service-areas .accent-line { background: rgba(255,255,255,0.5); }
+        .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 700px; margin: 0 auto; }
+        .area-item {
+            display: flex; align-items: center; gap: 12px;
+            background: rgba(255,255,255,0.15); padding: 16px 24px;
+            border-radius: 50px; color: var(--white); font-weight: 600;
+            transition: var(--transition);
+        }
+        .area-item:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
+        .area-item i { color: #FFD54F; font-size: 1.1rem; }
+
+        /* QUOTE FORM */
+        .quote-section {
+            background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%);
+            position: relative; overflow: hidden;
+        }
+        .quote-section::before {
+            content: ''; position: absolute; top: -50%; right: -10%;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .quote-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
+        .quote-content { color: var(--white); }
+        .quote-content h2 { color: var(--white); font-size: 2.2rem; margin-bottom: 20px; }
+        .quote-content p { opacity: 0.95; font-size: 1.05rem; margin-bottom: 30px; }
+        .quote-benefits { display: flex; flex-direction: column; gap: 15px; }
+        .quote-benefit { display: flex; align-items: center; gap: 12px; }
+        .quote-benefit i { color: var(--accent-green-light); font-size: 1.2rem; }
+        .quote-form-wrapper { background: var(--white); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; }
+        .quote-form-trigger { padding: 30px 40px; cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: space-between; }
+        .quote-form-trigger:hover { background: var(--off-white); }
+        .quote-form-trigger h3 { font-size: 1.4rem; display: flex; align-items: center; gap: 12px; }
+        .quote-form-trigger h3 i { color: var(--accent-green); }
+        .quote-form-trigger .toggle-icon { font-size: 1.2rem; color: var(--accent-green); transition: var(--transition); }
+        .quote-form-wrapper.expanded .toggle-icon { transform: rotate(180deg); }
+        .quote-form-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .quote-form-wrapper.expanded .quote-form-content { max-height: 600px; }
+        .quote-form-inner { padding: 0 40px 40px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--primary-dark); font-size: 0.9rem; }
+        .form-group input, .form-group select {
+            width: 100%; padding: 14px 16px; border: 2px solid var(--light-gray);
+            border-radius: var(--border-radius); font-family: 'Open Sans', sans-serif;
+            font-size: 1rem; transition: var(--transition); background: var(--off-white);
+        }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--accent-green); background: var(--white); }
+        .quote-form-inner .btn { width: 100%; justify-content: center; padding: 16px; font-size: 1rem; }
+
+        /* PROCESS */
+        .process-section { background: var(--warm-bg); }
+        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; position: relative; }
         .process-grid::before {
-            content: '';
-            position: absolute;
-            top: 50px;
-            left: 10%;
-            right: 10%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-green), var(--accent-green-dark));
+            content: ''; position: absolute; top: 50px; left: 10%; right: 10%;
+            height: 3px; background: linear-gradient(90deg, var(--accent-green), var(--accent-green-dark));
             z-index: 0;
         }
-
         .process-card {
-            background: var(--white);
-            padding: 30px 25px;
-            border-radius: var(--border-radius-lg);
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-            position: relative;
-            z-index: 1;
+            background: var(--white); padding: 30px 25px;
+            border-radius: var(--border-radius-lg); text-align: center;
+            box-shadow: var(--shadow-sm); position: relative; z-index: 1;
             transition: var(--transition);
         }
-
-        .process-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-        }
-
+        .process-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
         .process-number {
-            width: 50px;
-            height: 50px;
+            width: 50px; height: 50px;
             background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark));
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 1.3rem;
-            margin: 0 auto 20px;
-        }
-
-        .process-card h3 {
-            font-size: 1rem;
-            margin-bottom: 12px;
-            color: var(--primary-dark);
-        }
-
-        .process-card p {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-
-        /* ============================================
-           PORTFOLIO / OUR WORK SECTION
-        ============================================ */
-        .portfolio-section {
-            background: var(--white);
-        }
-
-        .portfolio-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 40px;
-        }
-
-        .portfolio-tab {
-            padding: 12px 25px;
-            background: var(--off-white);
-            border: none;
-            border-radius: 50px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: var(--transition);
-            color: var(--text-light);
-        }
-
-        .portfolio-tab.active,
-        .portfolio-tab:hover {
-            background: var(--accent-green);
-            color: var(--white);
-        }
-
-        .before-after-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
-        .before-after-card {
-            background: var(--white);
-            border-radius: var(--border-radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-        }
-
-        .before-after-card:hover {
-            box-shadow: var(--shadow-md);
-        }
-
-        .before-after-images {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            position: relative;
-        }
-
-        .before-after-images::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 4px;
-            height: 100%;
-            background: var(--white);
-        }
-
-        .ba-image {
-            position: relative;
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .ba-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .before-after-card:hover .ba-image img {
-            transform: scale(1.05);
-        }
-
-        .ba-label {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            background: var(--primary-dark);
-            color: var(--white);
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .ba-label.after {
-            background: var(--accent-green);
-        }
-
-        .before-after-info {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .before-after-info h4 {
-            font-size: 1rem;
-            color: var(--primary-dark);
-            margin-bottom: 5px;
-        }
-
-        .before-after-info p {
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-
-        /* Reviews Section */
-        .reviews-container {
-            margin-top: 60px;
-            padding-top: 60px;
-            border-top: 1px solid var(--light-gray);
-        }
-
-        .reviews-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .reviews-header h3 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .review-card {
-            background: var(--off-white);
-            padding: 30px;
-            border-radius: var(--border-radius-lg);
-            position: relative;
-        }
-
-        .review-card::before {
-            content: '"';
-            font-family: Georgia, serif;
-            font-size: 5rem;
-            color: var(--accent-green);
-            opacity: 0.2;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            line-height: 1;
-        }
-
-        .review-stars {
-            color: #FFB800;
-            margin-bottom: 15px;
-        }
-
-        .review-text {
-            font-style: italic;
-            color: var(--text-light);
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .review-author {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .review-avatar {
-            width: 45px;
-            height: 45px;
-            background: var(--accent-green);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .review-author-info strong {
-            display: block;
-            font-size: 0.95rem;
-            color: var(--primary-dark);
-        }
-
-        .review-author-info span {
-            font-size: 0.8rem;
-            color: var(--text-light);
-        }
-
-        /* ============================================
-           FAQ SECTION
-        ============================================ */
-        .faq-section {
-            background: var(--off-white);
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background: var(--white);
-            margin-bottom: 15px;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .faq-question {
-            width: 100%;
-            padding: 20px 25px;
-            background: var(--white);
-            border: none;
-            text-align: left;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 1rem;
-            color: var(--primary-dark);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: var(--transition);
-        }
-
-        .faq-question:hover {
-            background: var(--off-white);
-        }
-
-        .faq-question i {
-            color: var(--accent-green);
-            transition: var(--transition);
-        }
-
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 300px;
-        }
-
-        .faq-answer p {
-            padding: 0 25px 20px;
-            color: var(--text-light);
-            line-height: 1.7;
-        }
-
-        /* ============================================
-           FINAL CTA SECTION
-        ============================================ */
-        .final-cta {
-            background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark));
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .final-cta::before {
-            content: '';
-            position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 300px;
-            height: 300px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-        }
-
-        .final-cta::after {
-            content: '';
-            position: absolute;
-            bottom: -100px;
-            left: -100px;
-            width: 300px;
-            height: 300px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-        }
-
-        .final-cta .container {
-            position: relative;
-            z-index: 1;
-        }
-
-        .final-cta h2 {
-            color: var(--white);
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-
-        .final-cta p {
-            color: var(--white);
-            opacity: 0.95;
-            font-size: 1.15rem;
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .final-cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .final-cta .btn-secondary {
-            border-color: var(--white);
-            color: var(--white);
-        }
-
-        .final-cta .btn-secondary:hover {
-            background: var(--white);
-            color: var(--accent-green-dark);
-        }
-
-        /* ============================================
-           FOOTER
-        ============================================ */
-        .footer {
-            background: var(--primary-darker);
-            color: var(--white);
-            padding: 60px 0 0;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-
-        .footer-about .logo-text {
-            color: var(--white);
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-
-        .footer-about p {
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 12px;
-        }
-
-        .footer-social a {
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            transition: var(--transition);
-        }
-
-        .footer-social a:hover {
-            background: var(--accent-green);
-            transform: translateY(-3px);
-        }
-
-        .footer-column h4 {
-            color: var(--white);
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-column h4::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 40px;
-            height: 3px;
-            background: var(--accent-green);
-            border-radius: 2px;
-        }
-
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-
-        .footer-links a {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.95rem;
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-green);
-            padding-left: 5px;
-        }
-
-        .footer-contact li {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 15px;
-            color: rgba(255,255,255,0.7);
-            font-size: 0.95rem;
-        }
-
-        .footer-contact i {
-            color: var(--accent-green);
-            margin-top: 4px;
-        }
-
-        .footer-service-areas {
-            background: rgba(255,255,255,0.05);
-            padding: 25px 0;
-            text-align: center;
-        }
-
-        .footer-service-areas p {
-            color: rgba(255,255,255,0.8);
-            font-size: 0.95rem;
-        }
-
-        .footer-service-areas strong {
-            color: var(--accent-green);
-        }
-
-        .footer-bottom {
-            background: rgba(0,0,0,0.2);
-            padding: 20px 0;
-        }
-
-        .footer-bottom-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .footer-bottom p {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.9rem;
-        }
-
-        .footer-legal {
-            display: flex;
-            gap: 25px;
-        }
-
-        .footer-legal a {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.9rem;
-        }
-
-        .footer-legal a:hover {
-            color: var(--accent-green);
-        }
-
-        /* ============================================
-           STICKY 20% OFF FOOTER
-        ============================================ */
-        .sticky-offer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(90deg, var(--accent-green), var(--accent-green-dark));
-            padding: 12px 20px;
-            z-index: 999;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
-            transform: translateY(100%);
-            animation: slideUp 0.5s ease 1s forwards;
-        }
-
-        .sticky-offer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .sticky-offer-text {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            color: var(--white);
-        }
-
-        .sticky-offer-badge {
-            background: var(--white);
-            color: var(--accent-green-dark);
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 1.1rem;
-        }
-
-        .sticky-offer-text p {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .sticky-offer .btn {
-            background: var(--white);
-            color: var(--accent-green-dark);
-            padding: 10px 25px;
-        }
-
-        .sticky-offer .btn:hover {
-            background: var(--primary-dark);
-            color: var(--white);
-        }
-
-        .sticky-offer-close {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            color: var(--white);
-            font-size: 1.2rem;
-            cursor: pointer;
-            opacity: 0.8;
-            transition: var(--transition);
-        }
-
-        .sticky-offer-close:hover {
-            opacity: 1;
-        }
-
-        /* ============================================
-           ANIMATIONS
-        ============================================ */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(100%);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        /* ============================================
-           RESPONSIVE DESIGN
-        ============================================ */
+            color: var(--white); border-radius: 50%; display: flex;
+            align-items: center; justify-content: center;
+            font-family: 'Montserrat', sans-serif; font-weight: 800;
+            font-size: 1.3rem; margin: 0 auto 20px;
+        }
+        .process-card h3 { font-size: 1rem; margin-bottom: 12px; color: var(--primary-dark); }
+        .process-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+
+        /* PORTFOLIO */
+        .portfolio-section { background: var(--white); }
+        .before-after-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        .before-after-card { background: var(--white); border-radius: var(--border-radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); }
+        .before-after-card:hover { box-shadow: var(--shadow-md); }
+        .before-after-images { display: grid; grid-template-columns: 1fr 1fr; position: relative; }
+        .before-after-images::after { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: var(--white); }
+        .ba-image { position: relative; height: 250px; overflow: hidden; }
+        .ba-image img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .before-after-card:hover .ba-image img { transform: scale(1.05); }
+        .ba-label { position: absolute; bottom: 10px; left: 10px; background: var(--primary-dark); color: var(--white); padding: 6px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+        .ba-label.after { background: var(--accent-green); }
+        .before-after-info { padding: 20px; text-align: center; }
+        .before-after-info h4 { font-size: 1rem; color: var(--primary-dark); margin-bottom: 5px; }
+        .before-after-info p { font-size: 0.85rem; color: var(--text-light); }
+
+        /* REVIEWS */
+        .reviews-container { margin-top: 60px; padding-top: 60px; border-top: 1px solid var(--light-gray); }
+        .reviews-header { text-align: center; margin-bottom: 40px; }
+        .reviews-header h3 { font-size: 1.8rem; margin-bottom: 10px; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .review-card { background: var(--off-white); padding: 30px; border-radius: var(--border-radius-lg); position: relative; }
+        .review-card::before { content: '"'; font-family: Georgia, serif; font-size: 5rem; color: var(--accent-green); opacity: 0.2; position: absolute; top: 10px; left: 20px; line-height: 1; }
+        .review-stars { color: #FFB800; margin-bottom: 15px; }
+        .review-text { font-style: italic; color: var(--text-light); margin-bottom: 20px; position: relative; z-index: 1; }
+        .review-author { display: flex; align-items: center; gap: 12px; }
+        .review-avatar { width: 45px; height: 45px; background: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-family: 'Montserrat', sans-serif; }
+        .review-author-info strong { display: block; font-size: 0.95rem; color: var(--primary-dark); }
+        .review-author-info span { font-size: 0.8rem; color: var(--text-light); }
+
+        /* FAQ */
+        .faq-section { background: var(--warm-bg); }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--white); margin-bottom: 15px; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-sm); }
+        .faq-question { width: 100%; padding: 20px 25px; background: var(--white); border: none; text-align: left; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1rem; color: var(--primary-dark); cursor: pointer; display: flex; align-items: center; justify-content: space-between; transition: var(--transition); }
+        .faq-question:hover { background: var(--off-white); }
+        .faq-question i { color: var(--accent-green); transition: var(--transition); }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-item.active .faq-answer { max-height: 300px; }
+        .faq-answer p { padding: 0 25px 20px; color: var(--text-light); line-height: 1.7; }
+
+        /* FINAL CTA */
+        .final-cta { background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark)); text-align: center; position: relative; overflow: hidden; }
+        .final-cta::before { content: ''; position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%; }
+        .final-cta::after { content: ''; position: absolute; bottom: -100px; left: -100px; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%; }
+        .final-cta .container { position: relative; z-index: 1; }
+        .final-cta h2 { color: var(--white); font-size: 2.5rem; margin-bottom: 15px; }
+        .final-cta p { color: var(--white); opacity: 0.95; font-size: 1.15rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .final-cta-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .final-cta .btn-secondary { border-color: var(--white); color: var(--white); }
+        .final-cta .btn-secondary:hover { background: var(--white); color: var(--accent-green-dark); }
+
+        /* FOOTER */
+        .footer { background: var(--primary-darker); color: var(--white); padding: 60px 0 0; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-about .logo-text { color: var(--white); font-size: 1.8rem; margin-bottom: 15px; font-family: 'Montserrat', sans-serif; font-weight: 800; }
+        .footer-about .logo-text span { color: var(--accent-green); }
+        .footer-about p { color: rgba(255,255,255,0.7); margin-bottom: 20px; font-size: 0.95rem; }
+        .footer-social { display: flex; gap: 12px; }
+        .footer-social a { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); transition: var(--transition); }
+        .footer-social a:hover { background: var(--accent-green); transform: translateY(-3px); }
+        .footer-column h4 { color: var(--white); font-size: 1.1rem; margin-bottom: 20px; position: relative; padding-bottom: 10px; }
+        .footer-column h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 3px; background: var(--accent-green); border-radius: 2px; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: rgba(255,255,255,0.7); font-size: 0.95rem; transition: var(--transition); }
+        .footer-links a:hover { color: var(--accent-green); padding-left: 5px; }
+        .footer-contact li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .footer-contact i { color: var(--accent-green); margin-top: 4px; }
+        .footer-service-areas { background: rgba(255,255,255,0.05); padding: 20px 0; text-align: center; }
+        .footer-service-areas p { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+        .footer-service-areas strong { color: var(--accent-green); }
+        .footer-bottom { background: rgba(0,0,0,0.2); padding: 20px 0; }
+        .footer-bottom-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .footer-bottom p { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
+        .footer-legal { display: flex; gap: 25px; }
+        .footer-legal a { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
+        .footer-legal a:hover { color: var(--accent-green); }
+
+        /* STICKY OFFER */
+        .sticky-offer { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, var(--accent-green), var(--accent-green-dark)); padding: 12px 20px; z-index: 999; box-shadow: 0 -4px 20px rgba(0,0,0,0.2); transform: translateY(100%); animation: slideUp 0.5s ease 1s forwards; }
+        .sticky-offer-content { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .sticky-offer-text { display: flex; align-items: center; gap: 15px; color: var(--white); }
+        .sticky-offer-badge { background: var(--white); color: var(--accent-green-dark); padding: 8px 16px; border-radius: 50px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.1rem; }
+        .sticky-offer-text p { font-weight: 600; font-size: 1rem; }
+        .sticky-offer .btn { background: var(--white); color: var(--accent-green-dark); padding: 10px 25px; }
+        .sticky-offer .btn:hover { background: var(--primary-dark); color: var(--white); }
+        .sticky-offer-close { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--white); font-size: 1.2rem; cursor: pointer; opacity: 0.8; transition: var(--transition); }
+        .sticky-offer-close:hover { opacity: 1; }
+
+        /* EXIT POPUP */
+        .exit-popup-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 10000; display: none; align-items: center; justify-content: center; padding: 20px; }
+        .exit-popup-overlay.active { display: flex; }
+        .exit-popup { background: var(--white); border-radius: var(--border-radius-lg); max-width: 450px; width: 100%; text-align: center; position: relative; animation: popupSlide 0.3s ease; overflow: hidden; }
+        @keyframes popupSlide { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        .exit-popup-header { background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark)); padding: 30px; color: var(--white); }
+        .exit-popup-header .wave { font-size: 2.5rem; margin-bottom: 10px; }
+        .exit-popup-header h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 5px; }
+        .exit-popup-header p { font-size: 1.8rem; font-weight: 800; font-family: 'Montserrat', sans-serif; }
+        .exit-popup-body { padding: 30px; }
+        .exit-popup-timer { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--text-light); margin-bottom: 20px; font-size: 0.9rem; }
+        .exit-popup-timer i { color: var(--accent-green); }
+        .exit-popup-body .btn { width: 100%; margin-bottom: 15px; }
+        .exit-popup-close { background: none; border: none; color: var(--text-light); cursor: pointer; font-size: 0.9rem; transition: var(--transition); }
+        .exit-popup-close:hover { color: var(--primary-dark); }
+        .exit-popup-x { position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.2); border: none; color: var(--white); width: 30px; height: 30px; border-radius: 50%; cursor: pointer; font-size: 1rem; transition: var(--transition); }
+        .exit-popup-x:hover { background: rgba(255,255,255,0.3); }
+
+        /* ANIMATIONS */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+
+        /* RESPONSIVE */
         @media (max-width: 1024px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero-content {
-                order: 1;
-            }
-
-            .hero-image {
-                order: 0;
-                max-width: 500px;
-                margin: 0 auto;
-            }
-
-            .hero-description {
-                margin: 0 auto 35px;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .hero-features {
-                justify-content: center;
-            }
-
-            .hero-image-badge {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .quote-container {
-                grid-template-columns: 1fr;
-            }
-
-            .quote-content {
-                text-align: center;
-            }
-
-            .quote-benefits {
-                align-items: center;
-            }
-
-            .pricing-grid {
-                grid-template-columns: 1fr;
-                max-width: 400px;
-                margin: 0 auto;
-            }
-
-            .pricing-card.featured {
-                transform: none;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .service-card {
-                grid-template-columns: 1fr;
-            }
-
-            .service-image {
-                height: 200px;
-            }
-
-            .service-content {
-                padding: 25px;
-            }
-
-            .process-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .process-grid::before {
-                display: none;
-            }
-
-            .before-after-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .reviews-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .hero-container { grid-template-columns: 1fr; text-align: center; }
+            .hero-content { order: 1; }
+            .hero-image { order: 0; max-width: 500px; margin: 0 auto; }
+            .hero-description { margin: 0 auto 35px; }
+            .hero-buttons, .hero-features { justify-content: center; }
+            .hero-image-badge { left: 50%; transform: translateX(-50%); }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .quote-container { grid-template-columns: 1fr; }
+            .quote-content { text-align: center; }
+            .quote-benefits { align-items: center; }
+            .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+            .pricing-card.featured { transform: none; }
+            .services-grid { grid-template-columns: 1fr; }
+            .service-card { grid-template-columns: 1fr; }
+            .service-image { height: 220px; }
+            .service-content { padding: 25px; }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-grid::before { display: none; }
+            .before-after-grid, .reviews-grid { grid-template-columns: 1fr; }
+            .areas-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .nav-cta .btn {
-                display: none;
-            }
-
-            .mobile-toggle {
-                display: flex;
-            }
-
-            .hero {
-                min-height: auto;
-                padding: 120px 0 80px;
-            }
-
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero-features {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .section {
-                padding: 60px 0;
-            }
-
-            .section-header h2 {
-                font-size: 1.8rem;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .process-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .before-after-images {
-                grid-template-columns: 1fr;
-            }
-
-            .before-after-images::after {
-                top: 50%;
-                left: 0;
-                width: 100%;
-                height: 4px;
-                transform: translateY(-50%);
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .footer-column h4::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            .footer-social {
-                justify-content: center;
-            }
-
-            .footer-contact li {
-                justify-content: center;
-            }
-
-            .footer-bottom-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .final-cta h2 {
-                font-size: 1.8rem;
-            }
-
-            .sticky-offer-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 12px;
-            }
-
-            .sticky-offer-text {
-                flex-direction: column;
-                gap: 8px;
-            }
-        }
-
-        /* Add padding to body for sticky offer */
-        body {
-            padding-bottom: 70px;
+            .nav-links, .nav-cta .btn { display: none; }
+            .mobile-toggle { display: flex; }
+            .logo img { height: 50px; }
+            .hero { min-height: auto; padding: 120px 0 80px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-features { flex-direction: column; gap: 15px; }
+            .section { padding: 60px 0; }
+            .section-header h2 { font-size: 1.8rem; }
+            .features-grid, .process-grid { grid-template-columns: 1fr; }
+            .before-after-images { grid-template-columns: 1fr; }
+            .before-after-images::after { top: 50%; left: 0; width: 100%; height: 4px; transform: translateY(-50%); }
+            .areas-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 30px; }
+            .footer-column h4::after { left: 50%; transform: translateX(-50%); }
+            .footer-social { justify-content: center; }
+            .footer-contact { display: none; }
+            .footer-column:nth-child(3), .footer-column:nth-child(4) { display: none; }
+            .footer-bottom-content { flex-direction: column; text-align: center; }
+            .final-cta h2 { font-size: 1.8rem; }
+            .sticky-offer-content { flex-direction: column; text-align: center; gap: 12px; }
+            .sticky-offer-text { flex-direction: column; gap: 8px; }
+            .quote-form-trigger { padding: 25px; }
+            .quote-form-inner { padding: 0 25px 25px; }
         }
     </style>
 </head>
 <body>
-    <!-- ============================================
-         HEADER
-    ============================================ -->
+    <!-- HEADER -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="#" class="logo">
                     <img src="Logo.png" alt="Turbovac Gutter Cleaning Logo">
                 </a>
-
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Our Work</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
-
                 <div class="nav-cta">
                     <a href="tel:0431103323" class="nav-phone">
                         <i class="fas fa-phone"></i>
@@ -1702,19 +509,14 @@
                     </a>
                     <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
                 </div>
-
                 <div class="mobile-toggle" id="mobileToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- ============================================
-         HERO SECTION
-    ============================================ -->
+    <!-- HERO -->
     <section class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-content">
@@ -1762,46 +564,32 @@
         </div>
     </section>
 
-    <!-- ============================================
-         WHY CHOOSE US SECTION
-    ============================================ -->
+    <!-- WHY CHOOSE US -->
     <section class="section why-choose" id="about">
         <div class="container">
             <div class="section-header">
-                <h2>Why Choose Turbovac Gutter Cleaning?</h2>
+                <h2>Why Choose Turbovac Gutter Cleaning</h2>
                 <div class="accent-line"></div>
                 <p>We're not just another gutter cleaning service. Our ground-based vacuum technology sets us apart from the competition.</p>
             </div>
-
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-street-view"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-street-view"></i></div>
                     <h3>Ground-Based Service</h3>
                     <p>Our powerful vacuum system reaches your gutters from the ground, eliminating the need for dangerous roof access in most cases.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-home"></i></div>
                     <h3>No Roof Damage</h3>
                     <p>No heavy ladders or foot traffic on your roof means no cracked tiles, no dented gutters, and no damage to your property.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3>Fully Insured</h3>
                     <p>Complete peace of mind with full public liability insurance. Your property is protected throughout our service.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-comments"></i></div>
                     <h3>Fast Communication</h3>
                     <p>Quick response times, clear quotes, and reliable scheduling. We value your time and keep you informed every step.</p>
                 </div>
@@ -1809,86 +597,48 @@
         </div>
     </section>
 
-    <!-- ============================================
-         QUOTE FORM SECTION
-    ============================================ -->
-    <section class="section quote-section" id="quote">
-        <div class="container quote-container">
-            <div class="quote-content">
-                <h2>Get a Quote for Gutter Cleaning in Your Area</h2>
-                <p>Fill out the form and we'll get back to you within 24 hours with a competitive quote for your gutter cleaning needs.</p>
-                <div class="quote-benefits">
-                    <div class="quote-benefit">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Free no-obligation quotes</span>
+    <!-- SERVICES (FIRST) -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Gutter Cleaning Services</h2>
+                <div class="accent-line"></div>
+                <p>Professional gutter maintenance solutions designed to protect your home from water damage.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="Working_process.jpeg" alt="Residential Gutter Cleaning">
                     </div>
-                    <div class="quote-benefit">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Same-day response available</span>
-                    </div>
-                    <div class="quote-benefit">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Competitive pricing guaranteed</span>
-                    </div>
-                    <div class="quote-benefit">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Servicing all Hunter Valley areas</span>
+                    <div class="service-content">
+                        <h3>Residential Gutter Cleaning</h3>
+                        <p>Complete gutter vacuum cleaning for homes of all sizes. Our ground-based system safely removes leaves, debris, and sludge without damaging your roof or property.</p>
+                        <div class="service-features">
+                            <span class="service-feature-tag"><i class="fas fa-check"></i> Ground-based</span>
+                            <span class="service-feature-tag"><i class="fas fa-check"></i> No mess</span>
+                            <span class="service-feature-tag"><i class="fas fa-check"></i> Fast service</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="quote-form-wrapper">
-                <h3>Request Your Free Quote</h3>
-                <form id="quoteForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="Car.jpeg" alt="Commercial Gutter Cleaning">
+                    </div>
+                    <div class="service-content">
+                        <h3>Commercial Gutter Cleaning</h3>
+                        <p>Tailored gutter maintenance for commercial properties, warehouses, and multi-unit buildings. Scheduled services available to keep your business protected year-round.</p>
+                        <div class="service-features">
+                            <span class="service-feature-tag"><i class="fas fa-check"></i> Scheduled maintenance</span>
+                            <span class="service-feature-tag"><i class="fas fa-check"></i> Multi-property</span>
+                            <span class="service-feature-tag"><i class="fas fa-check"></i> Compliance ready</span>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="suburb">Suburb *</label>
-                        <input type="text" id="suburb" name="suburb" placeholder="e.g., Maitland, Newcastle..." required>
-                    </div>
-                    <div class="form-group">
-                        <label for="propertyType">Property Type</label>
-                        <select id="propertyType" name="propertyType">
-                            <option value="">Select property type</option>
-                            <option value="single-storey">Single Storey House</option>
-                            <option value="double-storey">Double Storey House</option>
-                            <option value="townhouse">Townhouse</option>
-                            <option value="commercial">Commercial Property</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Additional Information</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your gutter cleaning needs..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                        Submit Request
-                    </button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         PRICING SECTION
-    ============================================ -->
+    <!-- PRICING (SECOND) -->
     <section class="section pricing-section" id="pricing">
         <div class="container">
             <div class="section-header">
@@ -1896,17 +646,16 @@
                 <div class="accent-line"></div>
                 <p>Transparent pricing with no hidden fees. Choose the service that best fits your property.</p>
             </div>
-
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Single Storey</h3>
-                        <div class="price">From $150<span>/service</span></div>
+                        <div class="price">From $250<span>/service</span></div>
                     </div>
                     <div class="pricing-body">
                         <ul class="pricing-features">
                             <li><i class="fas fa-check"></i> Complete gutter vacuum</li>
-                            <li><i class="fas fa-check"></i> Downpipe check & flush</li>
+                            <li><i class="fas fa-check"></i> Downpipe check & clear</li>
                             <li><i class="fas fa-check"></i> Debris removal</li>
                             <li><i class="fas fa-check"></i> Before & after photos</li>
                             <li><i class="fas fa-check"></i> Visual roof inspection</li>
@@ -1914,17 +663,16 @@
                         <a href="#quote" class="btn btn-secondary quote-btn" data-property="single-storey">Get Quote</a>
                     </div>
                 </div>
-
                 <div class="pricing-card featured">
                     <span class="pricing-badge">Most Popular</span>
                     <div class="pricing-header">
                         <h3>Double Storey</h3>
-                        <div class="price">From $220<span>/service</span></div>
+                        <div class="price">From $350<span>/service</span></div>
                     </div>
                     <div class="pricing-body">
                         <ul class="pricing-features">
                             <li><i class="fas fa-check"></i> Complete gutter vacuum</li>
-                            <li><i class="fas fa-check"></i> All downpipes cleared</li>
+                            <li><i class="fas fa-check"></i> All downpipes checked & cleared</li>
                             <li><i class="fas fa-check"></i> Full debris removal</li>
                             <li><i class="fas fa-check"></i> Before & after photos</li>
                             <li><i class="fas fa-check"></i> Full roof inspection</li>
@@ -1933,7 +681,6 @@
                         <a href="#quote" class="btn btn-primary quote-btn" data-property="double-storey">Get Quote</a>
                     </div>
                 </div>
-
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Commercial</h3>
@@ -1954,54 +701,81 @@
         </div>
     </section>
 
-    <!-- ============================================
-         SERVICES SECTION
-    ============================================ -->
-    <section class="section services-section" id="services">
+    <!-- SERVICE AREAS -->
+    <section class="service-areas" id="areas">
         <div class="container">
             <div class="section-header">
-                <h2>Our Gutter Cleaning Services</h2>
+                <h2>Service Areas</h2>
                 <div class="accent-line"></div>
-                <p>Professional gutter maintenance solutions designed to protect your home from water damage.</p>
+                <p>Proudly serving the greater Hunter Valley area and surrounding communities</p>
             </div>
+            <div class="areas-grid">
+                <div class="area-item"><i class="fas fa-map-marker-alt"></i><span>Maitland</span></div>
+                <div class="area-item"><i class="fas fa-map-marker-alt"></i><span>Newcastle</span></div>
+                <div class="area-item"><i class="fas fa-map-marker-alt"></i><span>Cessnock</span></div>
+                <div class="area-item"><i class="fas fa-map-marker-alt"></i><span>Lake Macquarie</span></div>
+                <div class="area-item"><i class="fas fa-map-marker-alt"></i><span>Port Stephens</span></div>
+                <div class="area-item"><i class="fas fa-map-marker-alt"></i><span>Singleton</span></div>
+            </div>
+        </div>
+    </section>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="Working_process.jpeg" alt="Gutter Vacuum Cleaning">
-                    </div>
-                    <div class="service-content">
-                        <h3>Gutter Vacuum Cleaning</h3>
-                        <p>Our powerful truck-mounted vacuum system removes leaves, debris, and sludge from your gutters from the safety of the ground. No mess left behind.</p>
-                        <div class="service-features">
-                            <span class="service-feature-tag"><i class="fas fa-check"></i> Ground-based</span>
-                            <span class="service-feature-tag"><i class="fas fa-check"></i> No mess</span>
-                            <span class="service-feature-tag"><i class="fas fa-check"></i> Fast service</span>
-                        </div>
-                    </div>
+    <!-- QUOTE FORM -->
+    <section class="section quote-section" id="quote">
+        <div class="container quote-container">
+            <div class="quote-content">
+                <h2>Get a Quote for Gutter Cleaning in Your Area</h2>
+                <p>Fill out the form and we'll get back to you within 24 hours with a competitive quote for your gutter cleaning needs.</p>
+                <div class="quote-benefits">
+                    <div class="quote-benefit"><i class="fas fa-check-circle"></i><span>Free no-obligation quotes</span></div>
+                    <div class="quote-benefit"><i class="fas fa-check-circle"></i><span>Same-day response available</span></div>
+                    <div class="quote-benefit"><i class="fas fa-check-circle"></i><span>Competitive pricing guaranteed</span></div>
+                    <div class="quote-benefit"><i class="fas fa-check-circle"></i><span>Servicing all Hunter Valley areas</span></div>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="After1.jpeg" alt="Downpipe Cleaning">
-                    </div>
-                    <div class="service-content">
-                        <h3>Downpipe Cleaning</h3>
-                        <p>Blocked downpipes cause overflows and water damage. We ensure all your downpipes are clear and flowing freely to protect your home's foundation.</p>
-                        <div class="service-features">
-                            <span class="service-feature-tag"><i class="fas fa-check"></i> Full flush</span>
-                            <span class="service-feature-tag"><i class="fas fa-check"></i> Blockage removal</span>
-                            <span class="service-feature-tag"><i class="fas fa-check"></i> Flow test</span>
-                        </div>
+            </div>
+            <div class="quote-form-wrapper" id="quoteFormWrapper">
+                <div class="quote-form-trigger" id="quoteFormTrigger">
+                    <h3><i class="fas fa-file-alt"></i> Request Your Free Quote</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="quote-form-content">
+                    <div class="quote-form-inner">
+                        <form id="quoteForm">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="For SMS quote" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Full Address *</label>
+                                <input type="text" id="address" name="address" placeholder="Street address, suburb, postcode" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="propertyType">Property Type *</label>
+                                <select id="propertyType" name="propertyType" required>
+                                    <option value="">Select property type</option>
+                                    <option value="single-storey">Single Storey House</option>
+                                    <option value="double-storey">Double Storey House</option>
+                                    <option value="townhouse">Townhouse</option>
+                                    <option value="commercial">Commercial Property</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Submit Request
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         PROCESS SECTION
-    ============================================ -->
+    <!-- PROCESS -->
     <section class="section process-section" id="process">
         <div class="container">
             <div class="section-header">
@@ -2009,26 +783,22 @@
                 <div class="accent-line"></div>
                 <p>A systematic approach that ensures thorough cleaning with minimal disruption to your day.</p>
             </div>
-
             <div class="process-grid">
                 <div class="process-card">
                     <div class="process-number">1</div>
                     <h3>Ground-Based Assessment</h3>
                     <p>We start by inspecting your gutters and roof from the ground using our high-reach camera system.</p>
                 </div>
-
                 <div class="process-card">
                     <div class="process-number">2</div>
                     <h3>High-Reach Vacuum Cleaning</h3>
                     <p>Our powerful vacuum system extends to your gutters, removing all debris without stepping on your roof.</p>
                 </div>
-
                 <div class="process-card">
                     <div class="process-number">3</div>
                     <h3>Roof Access Only When Required</h3>
                     <p>In rare cases where roof access is necessary, we take all precautions to prevent any damage.</p>
                 </div>
-
                 <div class="process-card">
                     <div class="process-number">4</div>
                     <h3>Before & After Photos</h3>
@@ -2038,9 +808,7 @@
         </div>
     </section>
 
-    <!-- ============================================
-         PORTFOLIO SECTION
-    ============================================ -->
+    <!-- PORTFOLIO -->
     <section class="section portfolio-section" id="portfolio">
         <div class="container">
             <div class="section-header">
@@ -2048,151 +816,60 @@
                 <div class="accent-line"></div>
                 <p>Real results from real jobs. See the difference professional gutter cleaning makes.</p>
             </div>
-
-            <div class="portfolio-tabs">
-                <button class="portfolio-tab active">Before & After</button>
-                <button class="portfolio-tab">All Photos</button>
-            </div>
-
             <div class="before-after-grid">
                 <div class="before-after-card">
                     <div class="before-after-images">
-                        <div class="ba-image">
-                            <img src="Before1.jpeg" alt="Before gutter cleaning">
-                            <span class="ba-label">Before</span>
-                        </div>
-                        <div class="ba-image">
-                            <img src="After1.jpeg" alt="After gutter cleaning">
-                            <span class="ba-label after">After</span>
-                        </div>
+                        <div class="ba-image"><img src="Before1.jpeg" alt="Before"><span class="ba-label">Before</span></div>
+                        <div class="ba-image"><img src="After1.jpeg" alt="After"><span class="ba-label after">After</span></div>
                     </div>
-                    <div class="before-after-info">
-                        <h4>Residential Home - Maitland</h4>
-                        <p>Heavy debris buildup cleared from tiled roof gutters</p>
-                    </div>
+                    <div class="before-after-info"><h4>Residential Home - Maitland</h4><p>Heavy debris buildup cleared from tiled roof gutters</p></div>
                 </div>
-
                 <div class="before-after-card">
                     <div class="before-after-images">
-                        <div class="ba-image">
-                            <img src="Before2.jpeg" alt="Before gutter cleaning">
-                            <span class="ba-label">Before</span>
-                        </div>
-                        <div class="ba-image">
-                            <img src="After2.jpeg" alt="After gutter cleaning">
-                            <span class="ba-label after">After</span>
-                        </div>
+                        <div class="ba-image"><img src="Before2.jpeg" alt="Before"><span class="ba-label">Before</span></div>
+                        <div class="ba-image"><img src="After2.jpeg" alt="After"><span class="ba-label after">After</span></div>
                     </div>
-                    <div class="before-after-info">
-                        <h4>Single Storey - Newcastle</h4>
-                        <p>Colorbond gutters restored to perfect condition</p>
-                    </div>
+                    <div class="before-after-info"><h4>Single Storey - Newcastle</h4><p>Colorbond gutters restored to perfect condition</p></div>
                 </div>
-
                 <div class="before-after-card">
                     <div class="before-after-images">
-                        <div class="ba-image">
-                            <img src="Before3.jpeg" alt="Before gutter cleaning">
-                            <span class="ba-label">Before</span>
-                        </div>
-                        <div class="ba-image">
-                            <img src="After3.jpeg" alt="After gutter cleaning">
-                            <span class="ba-label after">After</span>
-                        </div>
+                        <div class="ba-image"><img src="Before3.jpeg" alt="Before"><span class="ba-label">Before</span></div>
+                        <div class="ba-image"><img src="After3.jpeg" alt="After"><span class="ba-label after">After</span></div>
                     </div>
-                    <div class="before-after-info">
-                        <h4>Terracotta Roof - Cessnock</h4>
-                        <p>Years of leaf buildup safely removed</p>
-                    </div>
+                    <div class="before-after-info"><h4>Terracotta Roof - Cessnock</h4><p>Years of leaf buildup safely removed</p></div>
                 </div>
-
                 <div class="before-after-card">
                     <div class="before-after-images">
-                        <div class="ba-image">
-                            <img src="before4.jpeg" alt="Before gutter cleaning">
-                            <span class="ba-label">Before</span>
-                        </div>
-                        <div class="ba-image">
-                            <img src="after4.jpeg" alt="After gutter cleaning">
-                            <span class="ba-label after">After</span>
-                        </div>
+                        <div class="ba-image"><img src="before4.jpeg" alt="Before"><span class="ba-label">Before</span></div>
+                        <div class="ba-image"><img src="after4.jpeg" alt="After"><span class="ba-label after">After</span></div>
                     </div>
-                    <div class="before-after-info">
-                        <h4>Double Storey - Lake Macquarie</h4>
-                        <p>Complete gutter and downpipe clearing</p>
-                    </div>
+                    <div class="before-after-info"><h4>Double Storey - Lake Macquarie</h4><p>Complete gutter and downpipe clearing</p></div>
                 </div>
             </div>
-
-            <!-- Reviews Section -->
             <div class="reviews-container">
-                <div class="reviews-header">
-                    <h3>What Our Customers Say</h3>
-                    <div class="accent-line"></div>
-                </div>
-
+                <div class="reviews-header"><h3>What Our Customers Say</h3><div class="accent-line"></div></div>
                 <div class="reviews-grid">
                     <div class="review-card">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-text">"Fantastic service! They were on time, professional, and did an amazing job. Love that they sent before and after photos. Will definitely use again."</p>
-                        <div class="review-author">
-                            <div class="review-avatar">JM</div>
-                            <div class="review-author-info">
-                                <strong>John M.</strong>
-                                <span>Maitland, NSW</span>
-                            </div>
-                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Fantastic service. They were on time, professional, and did an amazing job. Love that they sent before and after photos. Will definitely use again."</p>
+                        <div class="review-author"><div class="review-avatar">JM</div><div class="review-author-info"><strong>John M.</strong><span>Maitland, NSW</span></div></div>
                     </div>
-
                     <div class="review-card">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-text">"So glad I found Turbovac. Previous cleaners cracked tiles on my roof. These guys do everything from the ground - no damage at all. Highly recommend!"</p>
-                        <div class="review-author">
-                            <div class="review-avatar">ST</div>
-                            <div class="review-author-info">
-                                <strong>Sarah T.</strong>
-                                <span>Newcastle, NSW</span>
-                            </div>
-                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"So glad I found Turbovac. Previous cleaners cracked tiles on my roof. These guys do everything from the ground - no damage at all. Highly recommend."</p>
+                        <div class="review-author"><div class="review-avatar">ST</div><div class="review-author-info"><strong>Sarah T.</strong><span>Newcastle, NSW</span></div></div>
                     </div>
-
                     <div class="review-card">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         <p class="review-text">"Great communication from start to finish. Quote was accurate, arrived when they said they would, and the gutters look brand new. Top notch service."</p>
-                        <div class="review-author">
-                            <div class="review-avatar">PK</div>
-                            <div class="review-author-info">
-                                <strong>Peter K.</strong>
-                                <span>Cessnock, NSW</span>
-                            </div>
-                        </div>
+                        <div class="review-author"><div class="review-avatar">PK</div><div class="review-author-info"><strong>Peter K.</strong><span>Cessnock, NSW</span></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         FAQ SECTION
-    ============================================ -->
+    <!-- FAQ -->
     <section class="section faq-section" id="faq">
         <div class="container">
             <div class="section-header">
@@ -2200,104 +877,52 @@
                 <div class="accent-line"></div>
                 <p>Got questions? We've got answers. Here are the most common things people ask us.</p>
             </div>
-
             <div class="faq-container">
                 <div class="faq-item active">
-                    <button class="faq-question">
-                        How often should I have my gutters cleaned?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We recommend cleaning your gutters at least twice a year - typically in autumn after leaves fall and in spring before heavy summer rains. Properties with lots of trees nearby may need more frequent cleaning, up to 3-4 times per year.</p>
-                    </div>
+                    <button class="faq-question">How often should I have my gutters cleaned?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>We recommend cleaning your gutters at least twice a year - typically in autumn after leaves fall and in spring before heavy summer rains. Properties with lots of trees nearby may need more frequent cleaning, up to 3-4 times per year.</p></div>
                 </div>
-
                 <div class="faq-item">
-                    <button class="faq-question">
-                        What areas do you service?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We service the entire Hunter Valley region including Maitland, Newcastle, Cessnock, Lake Macquarie, Port Stephens, and Singleton. If you're unsure whether we cover your area, just give us a call or submit a quote request.</p>
-                    </div>
+                    <button class="faq-question">What areas do you service?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>We service the entire Hunter Valley region including Maitland, Newcastle, Cessnock, Lake Macquarie, Port Stephens, and Singleton. If you're unsure whether we cover your area, just give us a call or submit a quote request.</p></div>
                 </div>
-
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Do you need to go on my roof?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>In most cases, no! Our ground-based vacuum system can reach most residential gutters without needing roof access. For unusual roof designs or extreme blockages, we may need brief roof access, but we always discuss this with you first and take all precautions.</p>
-                    </div>
+                    <button class="faq-question">Do you need to go on my roof?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>In most cases, no. Our ground-based vacuum system can reach most residential gutters without needing roof access. For unusual roof designs or extreme blockages, we may need brief roof access, but we always discuss this with you first and take all precautions.</p></div>
                 </div>
-
                 <div class="faq-item">
-                    <button class="faq-question">
-                        How long does gutter cleaning take?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>A typical single-storey home takes 45 minutes to 1.5 hours depending on the amount of debris. Double-storey homes may take 1-2 hours. We'll give you a time estimate when we provide your quote.</p>
-                    </div>
+                    <button class="faq-question">How long does gutter cleaning take?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>A typical single-storey home takes 45 minutes to 1.5 hours depending on the amount of debris. Double-storey homes may take 1-2 hours. We'll give you a time estimate when we provide your quote.</p></div>
                 </div>
-
                 <div class="faq-item">
-                    <button class="faq-question">
-                        What happens to the debris?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>All debris is vacuumed directly into our collection tank on the truck. We take it away with us, so there's no mess left on your property. Your gutters and yard will be cleaner than when we arrived!</p>
-                    </div>
+                    <button class="faq-question">What happens to the debris?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>All debris is vacuumed directly into our collection tank on the truck. We take it away with us, so there's no mess left on your property. Your gutters and yard will be cleaner than when we arrived.</p></div>
                 </div>
-
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Are you insured?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, we carry full public liability insurance for your peace of mind. This protects both your property and our team. We're happy to provide proof of insurance upon request.</p>
-                    </div>
+                    <button class="faq-question">Are you insured?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Yes, we carry full public liability insurance for your peace of mind. This protects both your property and our team. We're happy to provide proof of insurance upon request.</p></div>
                 </div>
-
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Do you provide before and after photos?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely! We document every job with before and after photos. This shows you exactly what we found and the results of our cleaning. You'll receive these photos after the service is complete.</p>
-                    </div>
+                    <button class="faq-question">Do you provide before and after photos?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Absolutely. We document every job with before and after photos. This shows you exactly what we found and the results of our cleaning. You'll receive these photos after the service is complete.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         FINAL CTA SECTION
-    ============================================ -->
+    <!-- FINAL CTA -->
     <section class="section final-cta" id="contact">
         <div class="container">
             <h2>Get a Fast FREE Quote</h2>
-            <p>Ready to get your gutters cleaned by professionals? Contact us today for a free, no-obligation quote. We respond within 24 hours!</p>
+            <p>Ready to get your gutters cleaned by professionals? Contact us today for a free, no-obligation quote. We respond within 24 hours.</p>
             <div class="final-cta-buttons">
-                <a href="#quote" class="btn btn-secondary">
-                    <i class="fas fa-file-alt"></i>
-                    Request Quote Online
-                </a>
-                <a href="tel:0431103323" class="btn btn-outline-white">
-                    <i class="fas fa-phone"></i>
-                    Call 0431 103 323
-                </a>
+                <a href="#quote" class="btn btn-secondary"><i class="fas fa-file-alt"></i>Request Quote Online</a>
+                <a href="tel:0431103323" class="btn btn-outline-white"><i class="fas fa-phone"></i>Call 0431 103 323</a>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         FOOTER
-    ============================================ -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -2305,18 +930,10 @@
                     <div class="logo-text">TURBO<span>VAC</span></div>
                     <p>Professional ground-based gutter cleaning services in the Hunter Valley region. Protecting your home from water damage with our innovative vacuum technology.</p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/people/Turbovac-Gutter-Cleaning/" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" aria-label="Google">
-                            <i class="fab fa-google"></i>
-                        </a>
+                        <a href="https://www.facebook.com/people/Turbovac-Gutter-Cleaning/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-column">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
@@ -2327,205 +944,152 @@
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#services">Gutter Vacuum Cleaning</a></li>
-                        <li><a href="#services">Downpipe Cleaning</a></li>
+                        <li><a href="#services">Residential Cleaning</a></li>
+                        <li><a href="#services">Commercial Cleaning</a></li>
+                        <li><a href="#services">Downpipe Clearing</a></li>
                         <li><a href="#pricing">Single Storey</a></li>
                         <li><a href="#pricing">Double Storey</a></li>
-                        <li><a href="#pricing">Commercial</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h4>Contact Us</h4>
                     <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:0431103323">0431 103 323</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:turbovacgutters@gmail.com">turbovacgutters@gmail.com</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Hunter Valley, NSW, Australia</span>
-                        </li>
+                        <li><i class="fas fa-phone"></i><a href="tel:0431103323">0431 103 323</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:turbovacgutters@gmail.com">turbovacgutters@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Maitland, NSW, Australia</span></li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="footer-service-areas">
-            <div class="container">
-                <p><strong>Gutter Cleaning Professionals</strong> in Maitland, Hunter Valley, Newcastle, Cessnock, Lake Macquarie, Port Stephens and Singleton</p>
-            </div>
+            <div class="container"><p><strong>Gutter Cleaning Professionals</strong> in Maitland, Hunter Valley, Newcastle, Cessnock, Lake Macquarie, Port Stephens and Singleton</p></div>
         </div>
-
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
                     <p>&copy; 2025 Turbovac Gutter Cleaning. All rights reserved.</p>
-                    <div class="footer-legal">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms & Conditions</a>
-                    </div>
+                    <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- ============================================
-         STICKY 20% OFF FOOTER
-    ============================================ -->
+    <!-- STICKY 20% OFF -->
     <div class="sticky-offer" id="stickyOffer">
         <div class="sticky-offer-content">
             <div class="sticky-offer-text">
                 <span class="sticky-offer-badge">20% OFF</span>
-                <p>First-time customers get 20% off their gutter cleaning!</p>
+                <p>First-time customers get 20% off their gutter cleaning</p>
             </div>
             <a href="#quote" class="btn">Claim Your Discount</a>
         </div>
-        <button class="sticky-offer-close" id="closeOffer" aria-label="Close offer">
-            <i class="fas fa-times"></i>
-        </button>
+        <button class="sticky-offer-close" id="closeOffer" aria-label="Close offer"><i class="fas fa-times"></i></button>
     </div>
 
-    <!-- ============================================
-         JAVASCRIPT
-    ============================================ -->
+    <!-- EXIT POPUP -->
+    <div class="exit-popup-overlay" id="exitPopup">
+        <div class="exit-popup">
+            <button class="exit-popup-x" id="exitPopupX"><i class="fas fa-times"></i></button>
+            <div class="exit-popup-header">
+                <div class="wave">👋</div>
+                <h3>Before you go</h3>
+                <p>Get 20% OFF Gutter Cleaning</p>
+            </div>
+            <div class="exit-popup-body">
+                <div class="exit-popup-timer"><i class="fas fa-clock"></i><span>Takes less than 1 minute</span></div>
+                <a href="#quote" class="btn btn-primary" id="exitPopupCta"><i class="fas fa-tag"></i>Claim My Discount</a>
+                <button class="exit-popup-close" id="exitPopupClose">No thanks, I'll pay full price</button>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Header scroll effect
+        // Header scroll
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+            header.classList.toggle('scrolled', window.scrollY > 100);
         });
 
         // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
                 const isActive = item.classList.contains('active');
-                
-                // Close all items
-                faqItems.forEach(i => i.classList.remove('active'));
-                
-                // Open clicked item if it wasn't active
-                if (!isActive) {
-                    item.classList.add('active');
-                }
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
             });
         });
 
-        // Close sticky offer
-        const closeOffer = document.getElementById('closeOffer');
-        const stickyOffer = document.getElementById('stickyOffer');
-        closeOffer.addEventListener('click', () => {
-            stickyOffer.style.display = 'none';
+        // Sticky offer close
+        document.getElementById('closeOffer').addEventListener('click', () => {
+            document.getElementById('stickyOffer').style.display = 'none';
             document.body.style.paddingBottom = '0';
         });
 
-        // Smooth scroll for anchor links
+        // Expandable form
+        const quoteFormWrapper = document.getElementById('quoteFormWrapper');
+        document.getElementById('quoteFormTrigger').addEventListener('click', () => {
+            quoteFormWrapper.classList.toggle('expanded');
+        });
+
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        // ============================================
-        // PRICING CARD → QUOTE FORM AUTO-SELECT
-        // ============================================
-        const quoteButtons = document.querySelectorAll('.quote-btn');
-        const propertyTypeSelect = document.getElementById('propertyType');
-        const quoteFormWrapper = document.querySelector('.quote-form-wrapper');
-
-        quoteButtons.forEach(button => {
+        // Pricing buttons auto-select
+        document.querySelectorAll('.quote-btn').forEach(button => {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
-                
-                // Get the property type from data attribute
                 const propertyType = this.getAttribute('data-property');
-                
-                // Scroll to quote section
-                const quoteSection = document.getElementById('quote');
-                quoteSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-
-                // Wait for scroll to complete, then select property type
+                document.getElementById('quote').scrollIntoView({ behavior: 'smooth', block: 'start' });
                 setTimeout(() => {
-                    // Set the property type dropdown
-                    if (propertyType && propertyTypeSelect) {
-                        propertyTypeSelect.value = propertyType;
-                        
-                        // Add highlight effect to the form
-                        quoteFormWrapper.style.boxShadow = '0 0 0 4px rgba(92, 184, 92, 0.5), 0 8px 30px rgba(0,0,0,0.15)';
-                        quoteFormWrapper.style.transition = 'box-shadow 0.3s ease';
-                        
-                        // Add highlight to the dropdown
-                        propertyTypeSelect.style.borderColor = '#5CB85C';
-                        propertyTypeSelect.style.backgroundColor = 'rgba(92, 184, 92, 0.1)';
-                        
-                        // Remove highlight after 2 seconds
+                    if (!quoteFormWrapper.classList.contains('expanded')) quoteFormWrapper.classList.add('expanded');
+                    const select = document.getElementById('propertyType');
+                    if (propertyType && select) {
+                        select.value = propertyType;
+                        select.style.borderColor = '#4CAF50';
+                        select.style.backgroundColor = 'rgba(76, 175, 80, 0.1)';
                         setTimeout(() => {
-                            quoteFormWrapper.style.boxShadow = '0 8px 30px rgba(0,0,0,0.15)';
-                            propertyTypeSelect.style.borderColor = '#E9ECEF';
-                            propertyTypeSelect.style.backgroundColor = '#F8F9FA';
+                            select.style.borderColor = '#E8F5E9';
+                            select.style.backgroundColor = '#F5F7F5';
                         }, 2000);
-
-                        // Focus on first name field for better UX
                         document.getElementById('firstName').focus();
                     }
                 }, 800);
             });
         });
 
-        // Form submission (demo)
-        const quoteForm = document.getElementById('quoteForm');
-        quoteForm.addEventListener('submit', (e) => {
+        // Form submit
+        document.getElementById('quoteForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            
-            // Get form data for confirmation message
-            const formData = new FormData(quoteForm);
-            const propertyType = formData.get('propertyType');
-            const propertyLabels = {
-                'single-storey': 'Single Storey House',
-                'double-storey': 'Double Storey House',
-                'townhouse': 'Townhouse',
-                'commercial': 'Commercial Property',
-                'other': 'Other'
-            };
-            
-            const selectedProperty = propertyLabels[propertyType] || 'your property';
-            
-            alert(`Thank you for your quote request for ${selectedProperty}!\n\nWe will contact you within 24 hours with a competitive quote.`);
-            quoteForm.reset();
+            const propertyLabels = {'single-storey':'Single Storey House','double-storey':'Double Storey House','townhouse':'Townhouse','commercial':'Commercial Property','other':'Other'};
+            const selected = propertyLabels[new FormData(e.target).get('propertyType')] || 'your property';
+            alert(`Thank you for your quote request for ${selected}.\n\nWe will contact you within 24 hours with a competitive quote.`);
+            e.target.reset();
         });
 
-        // Portfolio tabs (demo)
-        const portfolioTabs = document.querySelectorAll('.portfolio-tab');
-        portfolioTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                portfolioTabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-            });
+        // Exit popup
+        const exitPopup = document.getElementById('exitPopup');
+        let exitShown = false;
+        document.addEventListener('mouseout', (e) => {
+            if (e.clientY <= 0 && !exitShown) { exitPopup.classList.add('active'); exitShown = true; }
         });
+        const closeExit = () => exitPopup.classList.remove('active');
+        document.getElementById('exitPopupX').addEventListener('click', closeExit);
+        document.getElementById('exitPopupClose').addEventListener('click', closeExit);
+        document.getElementById('exitPopupCta').addEventListener('click', (e) => {
+            e.preventDefault(); closeExit();
+            document.getElementById('quote').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setTimeout(() => { if (!quoteFormWrapper.classList.contains('expanded')) quoteFormWrapper.classList.add('expanded'); }, 800);
+        });
+        exitPopup.addEventListener('click', (e) => { if (e.target === exitPopup) closeExit(); });
     </script>
 </body>
 </html>
