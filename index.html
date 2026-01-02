@@ -286,16 +286,28 @@
         .quote-form-trigger .toggle-icon { font-size: 1.2rem; color: var(--accent-green); transition: var(--transition); }
         .quote-form-wrapper.expanded .toggle-icon { transform: rotate(180deg); }
         .quote-form-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
-        .quote-form-wrapper.expanded .quote-form-content { max-height: 600px; }
+        .quote-form-wrapper.expanded .quote-form-content { max-height: 900px; }
         .quote-form-inner { padding: 0 40px 40px; }
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--primary-dark); font-size: 0.9rem; }
-        .form-group input, .form-group select {
+        .form-group input, .form-group select, .form-group textarea {
             width: 100%; padding: 14px 16px; border: 2px solid var(--light-gray);
             border-radius: var(--border-radius); font-family: 'Open Sans', sans-serif;
             font-size: 1rem; transition: var(--transition); background: var(--off-white);
         }
-        .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--accent-green); background: var(--white); }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--accent-green); background: var(--white); }
+        .form-group textarea { resize: vertical; min-height: 80px; }
+        .radio-group { display: flex; flex-wrap: wrap; gap: 12px; }
+        .radio-option { display: flex; align-items: center; cursor: pointer; }
+        .radio-option input[type="radio"] { display: none; }
+        .radio-label {
+            padding: 12px 20px; background: var(--off-white); border: 2px solid var(--light-gray);
+            border-radius: var(--border-radius); font-weight: 500; transition: var(--transition);
+        }
+        .radio-option input[type="radio"]:checked + .radio-label {
+            background: rgba(76, 175, 80, 0.15); border-color: var(--accent-green); color: var(--accent-green-dark);
+        }
+        .radio-option:hover .radio-label { border-color: var(--accent-green); }
         .quote-form-inner .btn { width: 100%; justify-content: center; padding: 16px; font-size: 1rem; }
 
         /* PROCESS */
@@ -694,7 +706,7 @@
                             <li><i class="fas fa-check"></i> Compliance reporting</li>
                             <li><i class="fas fa-check"></i> Flexible scheduling</li>
                         </ul>
-                        <a href="#quote" class="btn btn-secondary quote-btn" data-property="commercial">Contact Us</a>
+                        <a href="#quote" class="btn btn-secondary quote-btn" data-property="3-plus">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -741,32 +753,73 @@
                 <div class="quote-form-content">
                     <div class="quote-form-inner">
                         <form id="quoteForm">
+                            <!-- Question 1: Property Type -->
                             <div class="form-group">
-                                <label for="firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required>
+                                <label>Is your property Single storey or Double? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="propertyType" value="single-storey" required>
+                                        <span class="radio-label">Single Storey</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="propertyType" value="double-storey">
+                                        <span class="radio-label">Double Storey</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="propertyType" value="3-plus">
+                                        <span class="radio-label">3+</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Question 2: Timeline -->
+                            <div class="form-group">
+                                <label>When do you need it done? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="timeline" value="this-week" required>
+                                        <span class="radio-label">This week</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="timeline" value="2-3-weeks">
+                                        <span class="radio-label">Next 2-3 weeks</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="timeline" value="asap">
+                                        <span class="radio-label">ASAP</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Question 3: Suburb -->
+                            <div class="form-group">
+                                <label for="suburb">What suburb are you in? *</label>
+                                <input type="text" id="suburb" name="suburb" placeholder="e.g. Maitland, Newcastle" required>
+                            </div>
+
+                            <!-- Question 4: Contact Information -->
+                            <div class="form-group">
+                                <label for="fullName">Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" placeholder="For SMS quote" required>
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="address">Full Address *</label>
-                                <input type="text" id="address" name="address" placeholder="Street address, suburb, postcode" required>
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
                             </div>
+
+                            <!-- Question 5: Optional Additional Info -->
                             <div class="form-group">
-                                <label for="propertyType">Property Type *</label>
-                                <select id="propertyType" name="propertyType" required>
-                                    <option value="">Select property type</option>
-                                    <option value="single-storey">Single Storey House</option>
-                                    <option value="double-storey">Double Storey House</option>
-                                    <option value="townhouse">Townhouse</option>
-                                    <option value="commercial">Commercial Property</option>
-                                    <option value="other">Other</option>
-                                </select>
+                                <label for="additionalInfo">Additional Information (Optional)</label>
+                                <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Please include any further information that may be required"></textarea>
                             </div>
+
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-paper-plane"></i>
-                                Submit Request
+                                Get My Free Quote
                             </button>
                         </form>
                     </div>
@@ -1043,7 +1096,7 @@
             });
         });
 
-        // Pricing buttons auto-select
+        // Pricing buttons auto-select property type
         document.querySelectorAll('.quote-btn').forEach(button => {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1051,28 +1104,26 @@
                 document.getElementById('quote').scrollIntoView({ behavior: 'smooth', block: 'start' });
                 setTimeout(() => {
                     if (!quoteFormWrapper.classList.contains('expanded')) quoteFormWrapper.classList.add('expanded');
-                    const select = document.getElementById('propertyType');
-                    if (propertyType && select) {
-                        select.value = propertyType;
-                        select.style.borderColor = '#4CAF50';
-                        select.style.backgroundColor = 'rgba(76, 175, 80, 0.1)';
-                        setTimeout(() => {
-                            select.style.borderColor = '#E8F5E9';
-                            select.style.backgroundColor = '#F5F7F5';
-                        }, 2000);
-                        document.getElementById('firstName').focus();
-                    }
+                    // Select the matching radio button
+                    const radio = document.querySelector(`input[name="propertyType"][value="${propertyType}"]`);
+                    if (radio) radio.checked = true;
                 }, 800);
             });
         });
 
-        // Form submit
+        // Form submit - Show Thank You message
         document.getElementById('quoteForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            const propertyLabels = {'single-storey':'Single Storey House','double-storey':'Double Storey House','townhouse':'Townhouse','commercial':'Commercial Property','other':'Other'};
-            const selected = propertyLabels[new FormData(e.target).get('propertyType')] || 'your property';
-            alert(`Thank you for your quote request for ${selected}.\n\nWe will contact you within 24 hours with a competitive quote.`);
-            e.target.reset();
+            // In Wix, this will be handled by Wix Forms and redirect to Thank You page
+            // For demo, show alert
+            const formInner = document.querySelector('.quote-form-inner');
+            formInner.innerHTML = `
+                <div style="text-align: center; padding: 40px 20px;">
+                    <div style="font-size: 4rem; margin-bottom: 20px;">✅</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: var(--primary-dark);">Thanks, you're all set</h3>
+                    <p style="color: var(--text-light); font-size: 1.1rem;">We'll be in touch in the next 24 hrs with your quote</p>
+                </div>
+            `;
         });
 
         // Exit popup
